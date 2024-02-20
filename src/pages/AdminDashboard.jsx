@@ -129,7 +129,7 @@ const AdminDashboard = () => {
                     value={email.email}
                     placeholder={`Subscriber email ${index + 1}`}
                     name= 'to_email'
-                    className="my-0 border p-2 w-full"
+                    className="my-0 border p-2 w-full text-sm"
                   />
                 ))}
                 <input
