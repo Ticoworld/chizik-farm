@@ -94,7 +94,7 @@ const AdminLogin = () => {
           </button>
         </div>
       </div>
-      <button className="bg-blue-500 text-white py-2 px-4 rounded" type="submit">
+      <button className="bg-green-500 text-white py-2 px-4 rounded" type="submit">
         Login
       </button>
     </form>
