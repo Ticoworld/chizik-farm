@@ -36,7 +36,7 @@ const Contact = () => {
       } else {
         Toast.fire({
           icon: 'error',
-          title: 'Subscription Failed'
+          title: 'Email already subscribed'
       })
       }
       
@@ -109,7 +109,7 @@ const Contact = () => {
             placeholder="Enter your email"
             value={email}
             onChange={(e)=> setEmail(e.target.value)}
-            className="border p-2 w-48 dark:bg-gray-800 dark:border-gray-600" required />
+            className="border p-2 w-48 dark:bg-gray-800 dark:border-gray-600 dark:text-white" required />
             <button type="submit" className="bg-green-500 text-white py-2 px-4 rounded">Subscribe</button>
           </form>
         </div>
