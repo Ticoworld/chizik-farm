@@ -13,7 +13,7 @@ const FAQPage = () => {
         </div>
       </div>
       <Faq />
-      <div className="lg:px-28 px-10 bg-gray-300 py-10 dark:bg-gray-900">
+      <div className="lg:px-28 px-8 bg-gray-300 py-10 dark:bg-gray-900">
         <div>
           <p className="dark:text-gray-200">
             Still have questions? Feel free to <a href="#contact">contact us</a>. Our team is here to assist you!

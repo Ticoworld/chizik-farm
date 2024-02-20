@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaWhatsapp 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-6">
-      <div className="lg:px-28 px-10 flex justify-between items-center">
+      <div className="lg:px-28 px-8 flex justify-between items-center">
         <div>
           <h4 className="text-2xl font-bold mb-2">Chizik Farm</h4>
           <p className="text-gray-400">Your Partner in Quality Livestock</p>

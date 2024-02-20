@@ -71,7 +71,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="lg:px-28 px-10 bg-gray-300 py-10 dark:bg-gray-900" id='contact-us'>
+    <div className="lg:px-28 px-8 bg-gray-300 py-10 dark:bg-gray-900" id='contact-us'>
       <div className="flex items-center gap-2 pb-3">
         <div className="w-[50px] h-[0.28rem] bg-green-950 dark:bg-green-500" />
         <h4 className="font-bold text-green-950 dark:text-green-500 text-2xl">CONTACT US</h4>
@@ -91,13 +91,10 @@ const Contact = () => {
           <a href="#instagram" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="text-2xl text-pink-600" />
           </a>
-          <a href="#linkedin" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="text-2xl text-blue-800" />
-          </a>
-          <a href="mailto:info@chizikfarm.com">
+          <a href="mailto:chizikfarms@gmail.com">
             <FaEnvelope className="text-2xl text-gray-600 dark:text-red-500" />
           </a>
-          <a href="#whatsapp" target="_blank" rel="noopener noreferrer">
+          <a href="wa.me/8167005963" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp className="text-2xl text-green-500" />
           </a>
         </div>

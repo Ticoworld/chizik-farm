@@ -47,7 +47,7 @@ const Faq = () => {
           },
       ];
   return (
-    <div className="lg:px-28 px-10 bg-gray-300 py-10 dark:bg-gray-900" id='faq'>
+    <div className="lg:px-28 px-8 bg-gray-300 py-10 dark:bg-gray-900" id='faq'>
        <div className="flex items-center gap-2  pb-3">
             <div className="w-[50px] h-[0.28rem] bg-green-950 dark:bg-green-500"/>
             <h4 className="font-bold text-green-950 dark:text-green-500 text-2xl">FAQ</h4>
