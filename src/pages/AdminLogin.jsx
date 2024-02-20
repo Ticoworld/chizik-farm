@@ -49,34 +49,41 @@ const AdminLogin = () => {
     }
   return (
     
-    <div className="flex items-center justify-center h-[100vh]">
-        <form onSubmit={handleLogin} className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-md">
-      <h1 className="text-2xl font-semibold mb-4">Admin Login</h1>
-      <div className="mb-4">
-        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-          Email:
-        </label>
-        <input
-          className="border p-2 w-full"
-          type="text"
-          id="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </div>
-      <div className="mb-4 relative">
-        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-          Password:
-        </label>
-        <div className="relative">
+    <div className="flex items-center justify-center h-[100vh]"> 
+      <div className="flex max-w-lg mx-auto p-6 bg-white shadow-md rounded-md flex-col items-center">
+            <div className="flex items-center flex-col">
+              <img src="/logo.png" alt=""  className="w-16"/>
+              <p className="text-green-700">chizik farms</p>
+            </div>
+
+            
+            <h1 className="text-2xl font-semibold mb-4">Admin Login</h1>
+         <form onSubmit={handleLogin} className="">
+            <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+            Email:
+          </label>
           <input
-            className="border p-2 w-full pr-10"
-            type={showPassword ? "text" : "password"}
-            id="password"
-            placeholder="Enter your password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            className="border p-2 w-full"
+            type="text"
+            id="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="mb-4 relative">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+            Password:
+          </label>
+          <div className="relative">
+            <input
+              className="border p-2 w-full pr-10"
+              type={showPassword ? "text" : "password"}
+              id="password"
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
           />
           <button
             type="button"
@@ -91,6 +98,8 @@ const AdminLogin = () => {
         Login
       </button>
     </form>
+      </div>
+       
     </div>
     
   );

@@ -1,56 +1,51 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import Swal from 'sweetalert2';
+// import React, { useRef } from 'react';
+// import emailjs from '@emailjs/browser';
+// import Swal from 'sweetalert2';
 import Header from '../components/Header';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 const ContactPage = () => {
-  const Toast = Swal.mixin({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 3000,
-    timerProgressBar: true,
-    didOpen: (toast) => {
-      toast.addEventListener('mouseenter', Swal.stopTimer);
-      toast.addEventListener('mouseleave', Swal.resumeTimer);
-    }
-  });
+  // const Toast = Swal.mixin({
+  //   toast: true,
+  //   position: 'top-end',
+  //   showConfirmButton: false,
+  //   timer: 3000,
+  //   timerProgressBar: true,
+  //   didOpen: (toast) => {
+  //     toast.addEventListener('mouseenter', Swal.stopTimer);
+  //     toast.addEventListener('mouseleave', Swal.resumeTimer);
+  //   }
+  // });
 
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    // Add your subscribe logic here
-  };
 
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const form = useRef();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm('service_loyl4k9',
-        'template_6wm5cfg',
-        form.current, {
-        publicKey: 'yfGEXTBtwGJ5adI5E',
-      })
-      .then(
-        () => {
-          Toast.fire({
-            icon: 'success',
-            title: 'Message Sent Successfully'
-          });
-          e.target.reset();
-        },
-        (error) => {
-          Toast.fire({
-            icon: 'success',
-            title: `'FAILED...', ${error.text}`
-          });
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
+  //   emailjs
+  //     .sendForm('service_loyl4k9',
+  //       'template_6wm5cfg',
+  //       form.current, {
+  //       publicKey: 'yfGEXTBtwGJ5adI5E',
+  //     })
+  //     .then(
+  //       () => {
+  //         Toast.fire({
+  //           icon: 'success',
+  //           title: 'Message Sent Successfully'
+  //         });
+  //         e.target.reset();
+  //       },
+  //       (error) => {
+  //         Toast.fire({
+  //           icon: 'success',
+  //           title: `'FAILED...', ${error.text}`
+  //         });
+  //         console.log('FAILED...', error.text);
+  //       },
+  //     );
+  // };
 
   return (
     <div>

@@ -18,7 +18,7 @@ const Contact = () => {
   });
   async function handleSubscribe(e) {
     e.preventDefault();
-    const req = await fetch('http://localhost:1337/api/emails',{
+    const req = await fetch('https://chizik-farm-server.vercel.app/api/emails',{
       method: 'POST',
       headers:{
         "Content-Type": "application/json"

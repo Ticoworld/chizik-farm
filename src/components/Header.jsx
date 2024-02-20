@@ -39,8 +39,10 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen)
     }
   return (
-    <div className={`header lg:py-2 px-3 py-3 flex sticky top-0 dark:bg-gray-900 dark:text-white bg-green-500 text-green-950  items-center justify-between z-20`}>
-      <div>Chizik</div>
+    <div className={`header lg:py-2 px-7 py-3 flex sticky top-0 dark:bg-gray-900 dark:text-white bg-green-500 text-green-950  items-center justify-between z-20`}>
+      <div className='dark:bg-white rounded-full'>
+            <img src="/logo.png" alt="" className='w-12'/>    
+      </div>
       <div className={`lg:flex lg:static lg:bg-transparent lg:justify-between lg:flex-row lg:auto lg:py-1 items-center ${isMenuOpen ? `flex-col absolute right-8 top-16 dark:bg-gray-900 bg-green-400 text-center py-3 rounded z-20` : `hidden`}`}>
        <Link to='/'> <p className='px-20 lg:px-4 lg:py-0 text-green-950 font-semibold py-2 w-full my-1 hover:text-green-800 cursor-pointer dark:text-green-400 dark:hover:text-green-100'>Home</p></Link>
         <div className='line lg:hidden'/>

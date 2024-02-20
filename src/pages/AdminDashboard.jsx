@@ -21,7 +21,7 @@ const AdminDashboard = () => {
     } else {
       const fetchEmails = async () => {
         try {
-          const response = await fetch('http://localhost:1337/api/subscribers', {
+          const response = await fetch('https://chizik-farm-server.vercel.app/api/subscribers', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
@@ -91,7 +91,19 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-[100vh] p-10">
+    <div>
+       <div className={`header lg:py-2 px-7 py-3 flex sticky top-0 text-white bg-green-500  items-center justify-between z-20`}>
+      <div className="font-bold text-xl">Chizik Farms</div>
+      <div className="">
+              <button
+                className="bg-red-800 text-white py-2 px-4 rounded"
+                onClick={handleLogout}
+              >
+                Logout
+              </button>
+            </div>
+    </div>
+      <div className="flex justify-center items-center h-[100vh] p-10">
       <div className="mx-auto p-6 bg-white shadow-md rounded-md w-full">
         {isLoading ? (
           <Loader />
@@ -104,7 +116,7 @@ const AdminDashboard = () => {
                 ))}
               </div>
             )}
-
+            <p>Welcome to the</p>
             <h1 className="text-2xl font-semibold mb-4">Admin Dashboard</h1>
 
             <div className="mt-4">
@@ -136,19 +148,12 @@ const AdminDashboard = () => {
                 <button className="bg-green-500 text-white py-2 px-4 rounded">Send Emails</button>
               </form>
             </div>
-
-            <div className="mt-4">
-              <button
-                className="bg-red-500 text-white py-2 px-4 rounded"
-                onClick={handleLogout}
-              >
-                Logout
-              </button>
-            </div>
           </>
         )}
       </div>
     </div>
+    </div>
+    
   );
 };
 
