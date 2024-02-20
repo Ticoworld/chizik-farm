@@ -69,6 +69,7 @@ const AdminLogin = () => {
             id="email"
             placeholder="Enter your email"
             value={email}
+            required
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
@@ -83,6 +84,7 @@ const AdminLogin = () => {
               id="password"
               placeholder="Enter your password"
               value={password}
+              required
               onChange={(e) => setPassword(e.target.value)}
           />
           <button
