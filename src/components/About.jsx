@@ -1,5 +1,5 @@
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="lg:px-28 px-8 bg-gray-300 py-10 dark:bg-gray-900">
@@ -55,10 +55,13 @@ const About = () => {
             </div>
             </div>
             <div className="text-center">
-              <button className="flex gap-0 text-white my-3 items-center justify-center bg-green-500 w-32 py-2 rounded font-semibold mx-auto">
-                <MdKeyboardDoubleArrowDown className="text-xl" />
-                <p>Read More</p>
-              </button>
+                <Link to='/about'>
+                    <button className="flex gap-0 text-white my-3 items-center justify-center bg-green-500 w-32 py-2 rounded font-semibold mx-auto">
+                    <MdKeyboardDoubleArrowDown className="text-xl" />
+                    <p>Read More</p>
+                </button>
+                </Link>
+              
             </div>
         </div>
     </div>
