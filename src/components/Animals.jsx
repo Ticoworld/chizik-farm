@@ -147,9 +147,8 @@ const Animals = () => {
                             <p className="text-gray-800 dark:text-gray-400"> {animal.message}</p>
                             <div className='py-10'>
                                     <Swiper
-                                    modules = {[Pagination, Autoplay, Navigation]}
+                                    modules = {[Pagination, Autoplay]}
                                     slidesPerView={3}
-                                    navigation
                                     autoplay = {{delay: 10000}}
                                     pagination={{ "clickable": true }}
                                     spaceBetween={10}

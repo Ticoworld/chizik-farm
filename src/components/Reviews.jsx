@@ -69,9 +69,8 @@ const Reviews = () => {
 
           <div className='py-10'>
             <Swiper
-                modules = {[Pagination, Autoplay, Navigation]}
+                modules = {[Pagination, Autoplay, ]}
                 slidesPerView={3}
-                navigation
                 autoplay = {{delay: 5000}}
                 pagination={{ "clickable": true }}
                 spaceBetween={10}
